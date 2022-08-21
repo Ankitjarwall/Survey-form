@@ -1,0 +1,43 @@
+body{
+  background:pink;
+}
+.container{
+  background-color:gray;
+  text-align:start;
+  max-width:500px;
+  margin:auto;
+  padding:1em;
+  line-height:25px;
+}
+#title{
+  text-align:center;
+}
+#description{
+  text-align:center;
+}
+.input-textarea{
+  width:100%;
+  min-height:120px;
+  resize:vertical;
+}
+#input-submit{
+   display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color:cyan;
+ 
+  border-radius: 5px;
+  cursor: pointer;
+}
+#name{
+  width:100%;
+}
+#email{
+  width:100%;
+}
+#number{
+  width:100%
+}
+#dropdown{
+  width:100%;
+}

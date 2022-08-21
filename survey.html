@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <title>survey form</title>
+</head>
+
+<body>
+  <h1 id="title">SURVEY</h1>
+  <p id="description">SCHOOL SURVEY</p>
+  <div class="container">
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label><br>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+      <label for="email" id="email-label">E-mail:</label><br>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+      <label for="number" id=number-label>Age:</label><br>
+      <input type="number" id="number" min="10" max="99" placeholder="Age" required><br>
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown">
+        <option disabled selected value>Select your role in school</option>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="principal">Principal</option>
+        <option value="staff">Staff</option>
+        <option value="other">Other</option>
+      </select>
+      <p>Please choose suitable option from below:</p>
+      <div>
+        <p>1:Teachers treat one another with respect:</p>
+        <label for="1">
+          <input type="radio" id="1" name="1-2">Agree</label><br>
+        <label for="2">
+          <input type="radio" id="2" name="1-2">Disagree</label>
+      </div>
+
+      <div>
+        <p>2:Students are involved in decisions that affect them in school:</p>
+        <label for="3">
+          <input type="radio" id="3" name="3-4">Agree</label><br>
+        <label for="4">
+          <input type="radio" id="4" name="3-4">Disagree</label>
+      </div>
+      <div>
+        <p>3:Teachers know their student's lives outside of school:</p>
+        <label for="5">
+          <input type="radio" id="5" name="5-6">Agree</label><br>
+        <label for="6">
+          <input type="radio" id="6" name="5-6">Disagree</label>
+      </div>
+      <div>
+        <p>4:Teachers in the school are<span>(check all that apply)</span>
+        <p>
+          <label>
+            <input type="checkbox" value="helpful" name="personality">Helpful</label>
+          <label><br>
+            <input type="checkbox" value="Kind" name="personality">Kind</label><br>
+          <label>
+            <input type="checkbox" value="strict" name="personality">Strict</label><br>
+          <label>
+            <input type="checkbox" value="Disciplined" name="personality">Disciplined</label>
+      </div>
+      <div>
+        <p>Any suggestions to improve school system:</p>
+        <textarea class="input-textarea" id="comments" name="comment" placeholder="Enter your comments here...">
+      </textarea>
+      </div>
+      <div>
+        <button type="submit" id="input-submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
